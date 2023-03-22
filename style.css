@@ -1,0 +1,84 @@
+/*Propiedades del cuerpo y main de la página*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: rgb(0, 206, 209);
+}
+main{
+    display: grid;
+    row-gap: 1rem;
+    width: 90%;
+    background-color: white;
+    color: rgb(22, 22, 22);
+    font-size: 14pt;
+    padding: 40px 35px 60px 35px;
+    box-shadow: 10px 10px rgb(0, 165, 167);
+}
+
+/*Propiedades de los componentes básicos*/
+.titulo{
+    font-size: 24pt;
+    font-weight: 700;
+}
+.btn{
+    background-color: green;
+    border: none;
+    color: white;
+    padding: 10px 0px;
+    font-size: 16pt;
+    cursor: pointer;
+    border-radius: 2px;
+    margin-top: 30px;
+}
+.field{
+    margin-top: 5px;
+    height: 30px;
+    font-size: 13pt;
+    padding: 2px 0px 2px 8px;
+    border: 1px solid rgb(140, 140, 140);
+    border-radius: 2px;
+}
+
+/*Propiedades del grid layout*/
+.d-grid{
+    display: grid;
+}
+.three-columns{
+    column-gap: 2rem;
+    row-gap: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+
+/*Propiedades para las fuentes*/
+.txt-center{
+    text-align: center;
+}
+.bold {
+    font-weight: bold;
+}
+
+
+/*Propiedades para el margen*/
+.mv-40{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.mb-20{
+    margin-bottom: 20px;
+}
+.mb-10{
+    margin-bottom: 10px;
+}
+.mb-5{
+    margin-bottom: 5px;
+}

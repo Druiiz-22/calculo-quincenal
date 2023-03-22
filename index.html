@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media-querys.css">
+    <script src="index.js"></script>
+
+    <title>Sueldo Quincenal</title>
+
+</head>
+
+<body>
+
+    <!-- Contenedor principal el programa -->
+    <main>
+        <h1 class="titulo">Calculo del sueldo quincenal</h1>
+
+        <!-- Contenedor con GridLayout para todos los datos de la persona -->
+        <div class="d-grid three-columns">
+
+            <!-- Caja para el ingreso de la cédula -->
+            <div class="d-grid">
+                <label for="cedula-empleado">Cedula</label>
+                <input id="txtCedula" class="field" type="number" name="cedula-empleado"
+                    placeholder="Ingrese su cedula">
+            </div>
+
+            <!-- Caja para el ingreso del nombre -->
+            <div class="d-grid">
+                <label for="nombre-empleado">Nombre</label>
+                <input id="txtNombre" class="field" type="text" name="nombre-empleado" placeholder="Ingrese su nombre">
+            </div>
+
+            <!-- Caja para el ingreso del apellido -->
+            <div class="d-grid">
+                <label for="apellido-empleado">Apellido</label>
+                <input id="txtApellido" class="field" type="text" name="apellido-empleado"
+                    placeholder="Ingrese su apellido">
+            </div>
+
+            <!-- Caja para el ingreso del horario de trabajo -->
+            <div class="d-grid">
+                <label for="">Horario de trabajo</label>
+
+                <select name="tipo-horario" id="cmbHorario" class="field">
+                    <option value="-1" selected>Seleccionar</option>
+                    <option value="1">Diurno</option>
+                    <option value="2">Vespertino</option>
+                    <option value="3">Nocturno</option>
+                </select>
+            </div>
+
+            <!-- Caja para el ingreso de los días de trabajo -->
+            <div class="d-grid">
+                <label for="dias-trabajo">Dias que trabaja</label>
+                <input id="txtDias" class="field" type="number" name="dias-trabajo"
+                    placeholder="Dias que trabaja a la semana">
+            </div>
+
+            <!-- Caja para el ingreso de las horas de trabajo -->
+            <div class="d-grid">
+                <label for="horas-trabajo">Horas de trabajo</label>
+                <input id="txtHoras" class="field" type="number" name="horas-trabajo"
+                    placeholder="Horas de trabajos diarias">
+            </div>
+        </div>
+
+        <!-- Botón para realizar los cálculos -->
+        <input id="btnCalcular" class="btn" type="submit" value="Calcular Quincena" name="btnCalculos"
+        onclick="calcular()">
+
+        <!-- Contenedor para mostrar los resultados -->
+        <div id="sueldo-box"></div>
+
+    </main>
+
+
+</body>
+
+</html>
